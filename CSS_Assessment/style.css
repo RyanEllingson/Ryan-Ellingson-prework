@@ -1,0 +1,34 @@
+.navbar {
+    text-align: center;
+    background-color: #818081;
+    padding: 1px;
+}
+
+.left {
+    background-color: #0300FD;
+    width: 50%;
+    height: 415px;
+    float: left;
+    margin-top: 32px;
+    text-align: center;
+    line-height: 415px;
+}
+
+.right {
+    background-color: #FE0001;
+    width: 25%;
+    height: 415px;
+    float: right;
+    margin-top: 32px;
+    text-align: center;
+    line-height: 415px;
+}
+
+.footer {
+    background-color: #028002;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+}
