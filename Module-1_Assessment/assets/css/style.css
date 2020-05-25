@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    background-image: url("../images/45degreee_fabric/45degreee_fabric.png");
+}
+
+a {
+    color: #777777;
+}
+
+.container {
+    max-width: none;
+}
+
+.name {
+    color: #ffffff!important;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+    color: #ffffff;
+}
+
+.navbar-brand {
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+}
+
+.heading {
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card-title {
+    color: #4aaaa5;
+}
+
+.title-row {
+    border-bottom: 3px solid #dddddd;
+}
+
+.footer {
+    background-color: #666666;
+    border-top: 6px solid #4aaaa5;
+    color: #dddddd;
+    font-size: 11px;
+    padding-top: 29px;
+    padding-bottom: 4px;
+}
+
+.content {
+    margin-bottom: 60px;
+}
