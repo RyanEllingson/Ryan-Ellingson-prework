@@ -55,3 +55,16 @@ a {
 .content {
     margin-bottom: 60px;
 }
+
+.caption {
+    top: 65%;
+    bottom: 5%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.caption-text {
+    line-height: 60px;
+}
