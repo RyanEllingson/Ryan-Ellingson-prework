@@ -68,3 +68,12 @@ a {
 .caption-text {
     line-height: 60px;
 }
+
+.btn {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.form-control {
+    font-size: 14px;
+}
