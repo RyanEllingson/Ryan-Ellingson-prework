@@ -1,11 +1,17 @@
+let gameStarted = false;
+
 const initializeGame = function() {
+    console.log("Game initialized");
+    gameStarted = true;
     const openingMessageEl = document.getElementById("opening-message");
     openingMessageEl.className = "d-none";
 }
 
 // Display intro screen, listen for keyboard entry - on keyboard entry, remove intro screen and start game
 document.addEventListener("keydown", () => {
-    initializeGame();
+    if (!gameStarted) {
+        initializeGame();
+    }
 });
 // Initialize list of questions
 // Randomly choose a question
