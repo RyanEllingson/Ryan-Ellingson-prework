@@ -5,6 +5,30 @@ const initializeGame = function() {
     gameStarted = true;
     const openingMessageEl = document.getElementById("opening-message");
     openingMessageEl.className = "d-none";
+    const word = new Word({question: "why?", answer: "Hello"});
+    console.log(word);
+}
+
+class Letter {
+    constructor(value) {
+        this.value = value;
+        this.guessed = false;
+    }
+}
+
+class Word {
+    constructor(word) {
+        this.question = word.question;
+        this.answer = word.answer;
+        this.letterList = [];
+        this.populateLetterList();
+    }
+    populateLetterList() {
+        for (let i=0; i<this.answer.length; i++) {
+            const letter = new Letter(this.answer[i].toUpperCase());
+            this.letterList.push(letter);
+        }
+    }
 }
 
 // Display intro screen, listen for keyboard entry - on keyboard entry, remove intro screen and start game
