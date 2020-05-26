@@ -7,19 +7,53 @@
     <title>MTG Word Guessing Game</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light mb-3">
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-12" id="game-container">
-                <div class="jumbotron text-center" id="opening-message">
-                    <h1 class="display-4">Welcome to the Magic: the Gathering Word Guessing Game!</h1>
-                    <p class="lead">Press any key to get started</p>
-                  </div>
+    <div class="jumbotron text-center" id="opening-message">
+        <h1 class="display-4">Welcome to the Magic: the Gathering Word Guessing Game!</h1>
+        <p class="lead">Press any key to get started</p>
+    </div>
+    <div class="container mt-5 d-none" id="game">
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card text-center">
+                    <div class="card-header" id="wins"></div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="question"></h5>
+                        <p class="card-text">Type keys on the keyboard to guess letters in the word!</p>
+                        <h5 class="card-title" id="answer"></h5>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-3" id="remaining"></div>
+                            <div class="col-9" id="incorrect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-none" id="win">
+            <div class="col-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Congratulations, you win!  Get ready for another question!</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container mt-3 d-none" id="lose">
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title" id="total-wins"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
+    <script src="./assets/javascript/questions.js"></script>
     <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
