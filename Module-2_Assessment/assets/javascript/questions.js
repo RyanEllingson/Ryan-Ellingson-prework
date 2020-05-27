@@ -1,3 +1,4 @@
+// Initialize list of questions
 const questions = [
     {
         "question": "What type of basic land produces red mana?",

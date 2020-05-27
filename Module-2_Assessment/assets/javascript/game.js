@@ -1,41 +1,11 @@
-// Initialize list of questions - done in separate js file
-
-let gameStarted = false;
-let game;
-
-const chooseWord = function() {
-    const index = Math.floor(Math.random()*questions.length);
-    return(questions[index]);
-}
-
-class Letter {
-    constructor(value) {
-        this.value = value;
-        this.guessed = false;
-    }
-}
-
-class Word {
-    constructor(word) {
-        this.question = word.question;
-        this.answer = word.answer;
-        this.letterList = [];
-        this.populateLetterList();
-    }
-    populateLetterList() {
-        // Initialize letter objects that make up the word
-        for (let i=0; i<this.answer.length; i++) {
-            const letter = new Letter(this.answer[i].toUpperCase());
-            this.letterList.push(letter);
-        }
-    }
-}
-
 class Game {
     constructor() {
         this.wins = 0;
+        this.gameStarted = false;
         this.gameOver = false;
         this.keyEnabled = true;
+        this.victorySongEl = document.getElementById("victory-song");
+        this.openingMessageEl = document.getElementById("opening-message");
         this.gameEl = document.getElementById("game");
         this.questionEl = document.getElementById("question");
         this.answerEl = document.getElementById("answer");
@@ -49,7 +19,7 @@ class Game {
     resetWord() {
         this.gameOver = false;
         // Randomly choose a question
-        this.word = new Word(chooseWord());
+        this.word = new Word(this.chooseWord());
         this.remainingGuesses = 10;
         this.incorrectGuesses = [];
         this.renderGame();
@@ -95,7 +65,11 @@ class Game {
             this.winEl.className="d-none";
             this.resetWord();
             this.keyEnabled = true;
+            this.victorySongEl.pause();
+            this.victorySongEl.load();
         }, 5000);
+        console.log(this.victorySong);
+        this.victorySongEl.play();
         this.keyEnabled = false;
         this.winEl.className="row";
         this.wins += 1;
@@ -150,9 +124,11 @@ class Game {
                 }
                 this.remainingGuesses -= 1;
             }
+            // If player runs out of guesses, game over
             if (this.remainingGuesses < 1) {
                 this.handleLose();
             }
+            // When word is complete, display Game Win message, choose new word, and start game again
             if (wordComplete) {
                 this.handleWin();
             }
@@ -160,9 +136,16 @@ class Game {
         }
     }
     initializeGame() {
-        gameStarted = true;
-        const openingMessageEl = document.getElementById("opening-message");
-        openingMessageEl.className = "d-none";
+        // Display intro screen, listen for keyboard entry - on keyboard entry, remove intro screen and start game
+        document.addEventListener("keydown", () => {
+            if (!this.gameStarted) {
+                this.startGame();
+            }
+        });
+    }
+    startGame() {
+        this.gameStarted = true;
+        this.openingMessageEl.className = "d-none";
         this.gameEl.className = "container mt-5";
         this.loseEl.className = "d-none";
         // Display question, number of remaining guesses, and incorrect guesses
@@ -176,17 +159,11 @@ class Game {
     }
 }
 
-// Display intro screen, listen for keyboard entry - on keyboard entry, remove intro screen and start game
-document.addEventListener("keydown", () => {
-    if (!gameStarted) {
-        game = new Game();
-    }
-});
 
 
 
 
 
 
-// When word is complete, display Game Win message, choose new word, and start game again
-// If player runs out of guesses, game over
+
+
