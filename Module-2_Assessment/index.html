@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>MTG Word Guessing Game</title>
 </head>
 <body>
-    <div class="jumbotron text-center" id="opening-message">
+    <div class="jumbotron text-center m-5" id="opening-message">
         <h1 class="display-4">Welcome to the Magic: the Gathering Word Guessing Game!</h1>
         <p class="lead">Press any key to get started</p>
     </div>
@@ -15,16 +16,16 @@
         <div class="row mb-3">
             <div class="col-12">
                 <div class="card text-center">
-                    <div class="card-header" id="wins"></div>
+                    <div class="card-header text-white" id="wins"></div>
                     <div class="card-body">
                         <h5 class="card-title" id="question"></h5>
                         <p class="card-text">Type keys on the keyboard to guess letters in the word!</p>
                         <h5 class="card-title" id="answer"></h5>
                     </div>
-                    <div class="card-footer">
-                        <div class="row">
+                    <div class="card-footer text-white">
+                        <div class="row justify-content-around">
                             <div class="col-3" id="remaining"></div>
-                            <div class="col-9" id="incorrect"></div>
+                            <div class="col-4" id="incorrect"></div>
                         </div>
                     </div>
                 </div>
@@ -32,9 +33,16 @@
         </div>
         <div class="row d-none" id="win">
             <div class="col-12">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Congratulations, you win!  Get ready for another question!</h5>
+                <div class="card text-center mb-5">
+                    <div class="row no-gutters align-items-center card-body">
+                        <div class="col-3">
+                            <img class="card-img" src="./assets/images/GideonBlackblade.jpg" alt="Gideon Blackblade">
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Congratulations, you win!  Get ready for another question!</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <audio src="./assets/audio/final-fantasy-vii-victory-fanfare-1.mp3" id="victory-song"></audio>
@@ -45,10 +53,18 @@
         <div class="row">
             <div class="col-12">
                 <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title" id="total-wins"></h5>
+                    <div class="row no-gutters align-items-center card-body">
+                        <div class="col-3">
+                            <img class="card-img" src="./assets/images/NicolBolas.jpg" alt="Nicol Bolas, Dragon-God">
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title" id="total-wins"></h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <audio src="./assets/audio/16-one-winged-angel.mp3" id="lose-song"></audio>
             </div>
         </div>
     </div>

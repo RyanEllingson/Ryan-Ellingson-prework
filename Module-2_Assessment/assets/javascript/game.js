@@ -5,6 +5,7 @@ class Game {
         this.gameOver = false;
         this.keyEnabled = true;
         this.victorySongEl = document.getElementById("victory-song");
+        this.loseSongEl = document.getElementById("lose-song");
         this.openingMessageEl = document.getElementById("opening-message");
         this.gameEl = document.getElementById("game");
         this.questionEl = document.getElementById("question");
@@ -67,15 +68,14 @@ class Game {
             this.keyEnabled = true;
             this.victorySongEl.pause();
             this.victorySongEl.load();
-        }, 5000);
-        console.log(this.victorySong);
+        }, 8000);
         this.victorySongEl.play();
         this.keyEnabled = false;
         this.winEl.className="row";
         this.wins += 1;
     }
     handleLose() {
-        console.log("game lost");
+        this.loseSongEl.play();
         this.gameEl.className = "d-none";
         this.loseEl.className = "container mt-5";
         document.getElementById("total-wins").innerHTML = `Sorry, out of guesses!  You successfully completed ${this.wins} words - hit any key to play again!`;
@@ -91,6 +91,8 @@ class Game {
     restartGame() {
         this.gameEl.className = "container mt-5";
         this.loseEl.className = "d-none";
+        this.loseSongEl.pause();
+        this.loseSongEl.load();
         this.gameOver = false;
         document.removeEventListener("keydown", () => {
             if (this.gameOver) {

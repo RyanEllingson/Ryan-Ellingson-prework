@@ -1,0 +1,31 @@
+body {
+    background: url(../images/388306.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card {
+    border: black;
+    opacity: 90%;
+}
+
+.card-header {
+    background-color: rgb(27, 0, 0);
+}
+
+.card-footer {
+    background-color: rgb(27, 0, 0);
+}
+
+.card-body {
+    background-color: rgb(4, 29, 15);
+    color: rgb(187, 207, 4);
+}
+
+.jumbotron {
+    background-color: rgb(4, 29, 15);
+    color: rgb(187, 207, 4);
+    opacity: 85%;
+}
