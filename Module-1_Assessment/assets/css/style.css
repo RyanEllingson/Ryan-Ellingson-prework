@@ -19,8 +19,12 @@ a {
 
 .navbar {
     background-color: #ffffff;
-    border-bottom: 2px solid #dddddd;
     color: #ffffff;
+}
+
+.navbar-spacing {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
 }
 
 .navbar-brand {
@@ -54,6 +58,10 @@ a {
 
 .content {
     margin-bottom: 60px;
+}
+
+.content-width {
+    max-width: 960px;
 }
 
 .caption {
