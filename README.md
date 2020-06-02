@@ -3,37 +3,34 @@
 This repo contains all assessments for the Dev10 Program Web Development prework.  All assessments are deployed live on Heroku using an Express server, and links to each of them can be found at the following home page: https://ryan-ellingson-prework.herokuapp.com/
 
 ## HTML and Basic CSS Assessment
----
 
 A screenshot of my submission is shown below, and the deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/HTML_BasicCSS_Assessment/
 ![HTML screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/HTML-screenshot.JPG)
 
 ## CSS Assessment
----
 
 A screenshot of my submission is shown below, and the deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/CSS_Assessment/
 ![CSS screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/CSS-screenshot.JPG)
 
 ## Bootstrap Assessment
----
 
 A screenshot of my submission is shown below, and the deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/Bootstrap_Assessment/
 ![Bootstrap screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/Bootstrap-screenshot.JPG)
 
 ## Module 1 Assessment
----
 
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/Module-1_Assessment/
 
 Below is a screenshot of the "About Me" page:
 ![About Me screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/Module1-screenshot.JPG)
+
 Below is a screenshot of the "Portfolio" page:
 ![Portfolio screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/Module1-screenshot2.JPG)
+
 Below is a screenshot of the "Contact" page:
 ![Contact screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/Module1-screenshot3.JPG)
 
 ## JavaScript Basics Assessment - Activity 1
----
 
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/JavaScript_Basics_Assessment/activity_1/
 
@@ -41,20 +38,21 @@ Upon loading the page, a series of calculations is performed as specified in the
 ![JavaScript activity 1 screenshot](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript1-screenshot.JPG)
 
 ## JavaScript Basics Assessment - Activity 2
----
 
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/JavaScript_Basics_Assessment/activity_2/
 
 Upon loading the page, the user is prompted to enter their name.
 ![JavaScript activity 2 screenshot 1](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript2-screenshot.JPG)
+
 If the name entered is 4 characters or less, an alert pops up displaying this information.
 ![JavaScript activity 2 screenshot 2](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript2-screenshot2.JPG)
+
 If instead the user enters a name that is greater than 4 characters, an alert displaying that information is displayed instead.
 ![JavaScript activity 2 screenshot 3](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript2-screenshot3.JPG)
+
 ![JavaScript activity 2 screenshot 4](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript2-screenshot4.JPG)
 
 ## JavaScript Basics Assessment - Activity 3
----
 
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/JavaScript_Basics_Assessment/activity_3/
 
@@ -63,7 +61,6 @@ Upon loading the page, the user is prompted with a series of 3 prompts, each of 
 ![JavaScript activity 3 screenshot 2](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript3-screenshot2.JPG)
 
 ## Module 2 Assessment
----
 
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/Module-2_Assessment/
 
