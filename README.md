@@ -58,6 +58,7 @@ If instead the user enters a name that is greater than 4 characters, an alert di
 The deployed project can be found at: https://ryan-ellingson-prework.herokuapp.com/JavaScript_Basics_Assessment/activity_3/
 
 Upon loading the page, the user is prompted with a series of 3 prompts, each of which ask the user to enter a name.  Once all 3 prompts are answered, these names, along with 3 pre-programmed names are printed to the console as shown in the following screenshot:
+
 ![JavaScript activity 3 screenshot 1](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript3-screenshot.JPG)
 
 ![JavaScript activity 3 screenshot 2](https://github.com/RyanEllingson/Ryan-Ellingson-prework/blob/master/screenshots/JavaScript3-screenshot2.JPG)
