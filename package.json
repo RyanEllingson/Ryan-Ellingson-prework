@@ -1,0 +1,23 @@
+{
+  "name": "ryan-ellingson-prework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanEllingson/Ryan-Ellingson-prework.git"
+  },
+  "author": "Ryan Ellingson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanEllingson/Ryan-Ellingson-prework/issues"
+  },
+  "homepage": "https://github.com/RyanEllingson/Ryan-Ellingson-prework#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
