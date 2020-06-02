@@ -16,41 +16,37 @@ app.use("/JavaScript_Basics_Assessment/activity_3", express.static("JavaScript_B
 app.use("/Module-1_Assessment", express.static("Module-1_Assessment"));
 app.use("/Module-2_Assessment", express.static("Module-2_Assessment"));
 
+// HTML routes
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "./home.html"))
+});
 app.get("/Bootstrap_Assessment", function(req, res) {
     res.sendFile(path.join(__dirname, "./Bootstrap_Assessment/index.html"));
 });
-
 app.get("/CSS_Assessment", function(req, res) {
     res.sendFile(path.join(__dirname, "./CSS_Assessment/index.html"));
 });
-
 app.get("/HTML_BasicCSS_Assessment", function(req, res) {
     res.sendFile(path.join(__dirname, "./HTML_BasicCSS_Assessment/index.html"));
 });
-
 app.get("/JavaScript_Basics_Assessment/activity_1", function(req, res) {
     res.sendFile(path.join(__dirname, "./JavaScript_Basics_Assessment/activity-1/activity-1.html"));
 });
-
 app.get("/JavaScript_Basics_Assessment/activity_2", function(req, res) {
     res.sendFile(path.join(__dirname, "./JavaScript_Basics_Assessment/activity-2/activity-2.html"));
 });
-
 app.get("/JavaScript_Basics_Assessment/activity_3", function(req, res) {
     res.sendFile(path.join(__dirname, "./JavaScript_Basics_Assessment/activity-3/activity-3.html"));
 });
-
 app.get("/Module-1_Assessment", function(req, res) {
     res.sendFile(path.join(__dirname, "./Module-1_Assessment/index.html"));
 });
-
 app.get("/Module-2_Assessment", function(req, res) {
     res.sendFile(path.join(__dirname, "./Module-2_Assessment/index.html"));
 });
-
-// app.get("*", function(req, res) {
-//     res.send("Sorry, invalid route");
-// });
+app.get("*", function(req, res) {
+    res.send("Sorry, invalid route");
+});
 
 
 app.listen(PORT, function() {
